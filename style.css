@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+   background-color: #FFE5E5;
+   display: grid;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+}
+/* .password__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.password__box{
+    display: flex;
+gap: 1rem;
+border: 2px solid #F3FDE8;
+padding: 1em 2em;
+border-radius: 1em;
+box-shadow: 2px 1px 6px 0px #FFBFBF;
+max-width: 290px;
+}
+.password__box:focus-within {
+    border-color: #A8DF8E; /* Change the border color when any child element is focused */
+  }
+
+.btn{
+    float: right;
+    border: none;
+    background: #FFBFBF;
+    height: 2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    > img{
+        height: 2rem;
+    }
+}
+#password{
+    background: transparent;
+    border: none;
+}
+input:focus{
+    outline: none;
+}
+.password__strength{
+    margin-top: 0.5em;
+    color: #6cde36;
+    text-transform: uppercase;
+}
